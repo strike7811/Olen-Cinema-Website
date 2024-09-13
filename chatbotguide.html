@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | Chat Bot Guide</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="chatbotguide.css" />
+    <link rel="stylesheet" href="layout.css" />
+
+    <script src="index.js" defer></script>
+    <script src="about.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e65100e7e85.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <div class="cbguide-container">
+        <div class="title">
+            <h2>Get confused on how to interact with our Olen Chat Bot?</h2>
+            <h2>Not to worry, here's the guide.</h2>
+        </div>
+        <table class="steps">
+            <tr>
+                <td class="col-1">Our Olen Chat Bot is friendly, you can say "Hi" to it.</td>
+                <td><img src="Images/bot/bot1.png" alt="bot1" width="100%" /></td>
+            </tr>
+            <tr>
+                <td class="col-1">You can ask our Chat Bot regarding the price of the cinemas. <br> Simply follow this format : <i>moviename price</i></td>
+                <td><img src="Images/bot/bot2.png" alt="bot2" width="100%" /></td>
+            </tr>
+            <tr>
+                <td class="col-1">Get to know the cinemas' release date. <br> The format is : <i>moviename release date</i></td>
+                <td><img src="Images/bot/bot3.png" alt="bot3" width="100%" /></td>
+            </tr>
+            <tr>
+                <td class="col-1">Locate us! <br> Try asking something like : <i>Where is the cinema</i></td>
+                <td><img src="Images/bot/bot4.png" alt="bot4" width="100%" /></td>
+            </tr>
+            <tr>
+                <td class="col-1">Enquire more about the showtime. <br> Try typing : <i>moviename</i> showtime</td>
+                <td><img src="Images/bot/bot5.png" alt="bot5" width="100%" /></td>
+            </tr>
+            <tr>
+                <td class="col-1">Check out the price of our snacks and beverages <br> With : <i>foodname</i> price</td>
+                <td><img src="Images/bot/bot6.png" alt="bot6" width="100%" /></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+    </footer>
+</body>

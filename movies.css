@@ -1,0 +1,44 @@
+h2 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.container {
+    margin: 10px 150px;
+}
+
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 5px 20px 5px 20px;
+}
+
+.container .column img {
+    border-radius: 5%;
+}
+
+.container .column img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.text h4 {
+    color: #f2f2f2;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 18px;
+}

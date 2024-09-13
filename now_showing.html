@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | Now Showing</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="now_showing.css">
+
+    <!-- Live Chat Links -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="chatresponse.js" defer></script>
+    <script type="module" src="chatbot.js" defer></script>
+
+    <!-- Popup Ad links -->
+    <link rel="stylesheet" href="ad.css">
+    <script src="ad.js" defer></script>
+
+    <script src="index.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+    <script type="module" src="clearFirebaseData.js"></script>
+
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+    <h2>Now Showing</h2>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <a href="nsm1.html"><img src="Images/poster/poster1.jpg" alt="Black Panther" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm1.html">
+                        <h4>Black Panther</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm2.html"><img src="Images/poster/poster2.jpg" alt="Aladdin" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm2.html">
+                        <h4>Aladdin</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm3.html"><img src="Images/poster/poster3.jpg" alt="Frozen 2" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm3.html">
+                        <h4>Frozen 2</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm4.html"><img src="Images/poster/poster4.jpg" alt="Inside Out" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm4.html">
+                        <h4>Inside Out</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="nsm5.html"><img src="Images/poster/poster5.jpg" alt="Encanto" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm5.html">
+                        <h4>Encanto</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm6.html"><img src="Images/poster/poster6.jpg" alt="Raya and The Last Dragon"
+                        style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm6.html">
+                        <h4>Raya and The Last Dragon</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm7.html"><img src="Images/poster/poster7.jpg" alt="Mary Poppins Returns"
+                        style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm7.html">
+                        <h4>Mary Poppins Returns</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm8.html"><img src="Images/poster/poster8.jpg" alt="Doctor Strange in the Multiverse of Madness"
+                        style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm8.html">
+                        <h4>Doctor Strange in the Multiverse of Madness</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="nsm9.html"><img src="Images/poster/poster9.jpg" alt="Cruella" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm9.html">
+                        <h4>Cruella</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm10.html"><img src="Images/poster/poster10.jpg" alt="Mulan" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm10.html">
+                        <h4>Mulan</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm11.html"><img src="Images/poster/poster11.jpg" alt="Squid Game" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm11.html">
+                        <h4>Squid Game</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm12.html"><img src="Images/poster/poster12.jpg" alt="Black Adam" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm12.html">
+                        <h4>Black Adam</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="nsm13.html"><img src="Images/poster/poster13.jpg" alt="Train to Busan" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm13.html">
+                        <h4>Train to Busan</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm14.html"><img src="Images/poster/poster14.jpg" alt="2012" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm14.html">
+                        <h4>2012</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm15.html"><img src="Images/poster/poster15.jpg" alt="3 Idiots" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm15.html">
+                        <h4>3 Idiots</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot_lc_container collapse">
+        <div class="bot_chat-header">
+            <div class="bot_logo">
+                <img src="Images/favicon.png" alt="chatlogo">
+            </div>
+            <div class="bot_title">Olen Chat Bot</div>
+        </div>
+        <div class="bot_chat-body">
+            <div class="loading hide">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+        </div>
+        <div class="bot_chat-input">
+            <div class="bot_input-sec">
+                <input type="text" id="bot_txtInput" placeholder="Type here" autofocus>
+            </div>
+            <div class="bot_send">
+                <img src="Images/sendbutton.png" alt="send" width="80%">
+            </div>
+        </div>
+    </div>
+    <div class="bot_chat_btn">
+        <div class="bot_content">
+            <h3 class="bot_tooltiptext">Chat with Me!</h3>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popupPosition">
+        <div class="popup-container">
+            <div class="imageclass">
+                <img src="Images/ad.png" alt="adbanner">
+            </div>
+            <div class="contentclass">
+                <div class="popup-content">
+                    <div class="skip-button">Skip in 5s</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

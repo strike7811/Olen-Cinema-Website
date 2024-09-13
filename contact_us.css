@@ -1,0 +1,89 @@
+* {
+    color: #f1f1f1;
+}
+
+.contact-container .title{
+    color: #f1f1f1;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.image{
+    margin-left: 3px;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url('Images/team.png');
+    background-size: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay h3{
+    color: white;
+    background-color: transparent;
+}
+
+.feedback{
+    color: #f1f1f1;
+    margin: auto;
+    max-width: 50%;
+    margin-top: 90px;
+}
+
+.info_container {
+    margin-bottom: 20px;
+}
+
+#fbname, #fbcontact {
+    margin-top: 10px;
+}
+
+input, textarea, select{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0.5px solid;
+    margin: 10px 0;
+    color: white;
+    font-size: 1.0rem;
+    border-radius: 5px;
+}
+
+#btn_container {
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    float: right;
+}
+
+input[type='submit'], input[type='button'] {
+    margin: 0 10px;
+    background-color: #ff5c33;
+}
+
+input[type='submit']:hover, input[type='button']:hover {
+    background-color: #ffa07a;
+    box-shadow: 0 0 15px 0 #ffa07a;
+}
+
+input:focus, select:focus, textarea:focus{
+    box-shadow: 0 0 15px 0 #ffa07a;
+}
+
+@media only screen and (max-width:800px) {
+    input[type='submit'], input[type='button'] {
+        font-size: small;
+    }
+}

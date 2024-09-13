@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | Receipt</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="summary.css">
+
+    <!-- Script source for social media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js" defer></script>
+    <script src="receipt.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+    <script type="module" src="summary.js" defer></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Privacy Policy</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <h2 id="title" style="text-align: center;">Receipt</h2>
+
+    <div class="container" style="width: 90%; font-size: smaller;"  >
+        <div class="receipt_container">
+            <div class="info_container">
+                <h4 id="label">Username</h4>
+                <p class="content" id="sname"></p>
+                <h4 id="label">Email</h4>
+                <p class="content" id="semail"></p>
+                <h4 id="label">Booking ID</h4>
+                <p class="content" id="bookingID"></p>
+            </div>
+            <h3 id="subtitle1">Movie Ticket Summary</h3>
+            <h4 id="label">Movie</h4>
+            <p class="content" id="scinema"></p>
+            <h4 id="label">Date</h4>
+            <p class="content" id="sdate"></p>
+            <h4 id="label">Time</h4>
+            <p class="content" id="stime"></p>
+            <h4 id="label">Venue</h4>
+            <p class="content" id="svenue"></p>
+            <h4 id="label">Seats Selected</h4>
+            <p class="content" id="sseats"></p>
+            <h4 id="label">Subtotal</h4>
+            <p class="content" id="msprice">RM0.00</p>
+            <br>
+            <h3 id="subtitle2">Food & Beverages Summary</h3>
+            <div id="fnb_container">
+
+                
+                <div class="fnb_row" id="FoodTitle" style="padding-bottom: 20px;">
+                    <div class="fnb_column">
+                        <p class="content">FOOD</p>
+                    </div>
+                    <div class="fnb_column">
+                        <p class="content" style="padding-left: 50px;">QTY</p>
+                    </div>
+                    <div class="fnb_column">
+                        <p class="content">PRICE</p>
+                    </div>
+                </div>
+
+
+                <div class="subtotal_row" style="border-top: 2px dashed #f1f1f1; padding: 20px 0 15px 0;">
+                    <div class="subtotal_column">
+                        <p class="content" style="font-weight: bold;">Subtotal</p>
+                    </div>
+                    <div class="subtotal_column hide">
+                        <p class="content">qty</p>
+                    </div>
+                    <div class="subtotal_column">
+                        <p class="content" id="subTotalFNB">price</p>
+                    </div>
+                </div>
+                <div class="total_row"
+                    style="border-top: 2px solid #f1f1f1; padding: 20px 0 15px 0; border-bottom: 2px solid #f1f1f1;">
+                    <div class="total_column">
+                        <p class="content" style="font-weight: bold;">Grand Total</p>
+                    </div>  
+                    <div class="total_column hide">
+                        <p class="content">qty</p>
+                    </div>
+                    <div class="total_column">
+                        <p class="content" id="grandTotal">price</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br><br>
+
+    <footer>
+    
+    </footer>
+</body>
+
+</html>

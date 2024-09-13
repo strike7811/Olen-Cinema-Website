@@ -1,0 +1,140 @@
+#container {
+    margin: auto;
+    width: 80%;
+    color: #f1f1f1;
+    margin-bottom: 100px;
+}
+
+/*faq*/
+.secforfaq{
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.secforfaq h2*/
+.secforfaq .title{
+    font-size: 2rem;
+    color: #f1f1f1;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.faq{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid #fff;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question:hover{
+    color: #ffa07a;
+}
+
+.question h4{
+    font-size: 1.2rem;
+
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.0s ease;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.faq.active .answer{
+    max-height: 900px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#general, #movies, #signup, #sst, #chatbot{
+    margin-bottom: 10vh;
+}
+
+#general h3, #movies h3, #signup h3, #sst h3, #chatbot h3{
+    font-size: 1.7rem;
+    color: white;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    border-bottom: 1px solid #ffa07a;
+    margin: 20px 0px 20px 0px;
+}
+
+
+#general .answer a, #chatbot .answer a {
+    color: #ffa07a;
+}
+
+#general .answer a:hover, #chatbot .answer a:hover{
+    font-size: 120%;
+}
+
+#faqtable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:hover{
+    color: #ffa07a;
+}
+
+th, td:not(:first-of-type){
+    padding: 8px;
+    text-align: center;
+}
+
+td:first-of-type{
+    width: 35%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .question h4{
+        font-size: medium;
+    }
+
+    svg{
+        display: none;
+    }
+}

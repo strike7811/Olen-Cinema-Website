@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | FAQ</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="FAQ.css" />
+
+    <script src="index.js" defer></script>
+    <script src="FAQ.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+    <script type="module" src="clearFirebaseData.js"></script>
+
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <div id="container">
+        <section class="secforfaq">
+            <h2 class="title">Frequently Asked Questions</h2>
+
+            <div id="general">
+                <h3>General Information</h3><br>
+                <div class="faq">
+                    <div class="question">
+                        <h4>I left my item in your cinema hall. How can I retrieve it?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            You can proceed to the cinema location or contact our Customer Relations at (603) 7888 7988
+                            (Monday - Friday from 9am to 6pm excluding Public Holidays) or email to <a
+                                href="mailto:OlenCinemas@movie.com">OlenCinemas@movie.com</a>
+                            for assistance.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>I'm interested to join Olen Cinemas. Is there any vacancy?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Please email your resume to <a href="mailto:OlenCinemas@movie.com">hr@OlenCinemas.com</a> .
+                            Our HR team will contact you directly if you
+                            are shortlisted.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>What are the restrictions applied to patrons?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Customers must adhere to the movie classification provided by LPF Malaysia as per below:-
+                            <dd>U - General viewing for all ages</dd>
+                            <dd>P13 - Parental guidance is advisable for children below 13 years old</dd>
+                            <dd>18 - For 18+ with elements for mature audiences (violence, horror, sex, politics,
+                                religion, counter-culture, etc.)</dd>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="movies">
+                <h3>Movies In Olen Cinemas</h3><br>
+                <div class="faq">
+                    <div class="question">
+                        <h4>I have an infant, 4 months old. Can I bring him / her together with me for a movie?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Yes, but only for movies classified as 'U' or 'P13'.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>My children are aged below 18 years old. Can I bring them for a movie classified '18'?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Kindly be reminded that this film is for patrons above the age of 18 only. We may verify
+                            your age against your NRIC.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>My children are aged below 13 years old. Can I bring them for a movie classified 'P13'?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Yes, children below 13 years old are allowed with parental guidance.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>How long will a movie usually be screened at Olen Cinemas?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            A movie will normally be screened for at least 2 weeks, or longer, depending on market
+                            demand.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>Can I bring in outside food into Olen Cinemas?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Food purchase outside of Olen Cinemas permises will not be allowed in the cinema / movie
+                            halls. If you had purchased any outside food, you may place them at the ticket tearing point
+                            before entering the cinema / movie halls.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="signup">
+                <h3>New Sign-Up</h3>
+                <div class="faq">
+                    <div class="question">
+                        <h4>How do I sign up to purchase e-ticket?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Click on the Log In button located at the top-right corner of the page. Make sure you have logged into your Olen Cinemas Account. Once your account is verified and registered, you will be able to purchase e-ticket
+                            from Olen Cinemas web.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h4>I forgot the password used for the Olen Cinemas account. What can I do?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            1. Click on the Log In button. <br />
+                            2. Click on FORGOT PASSWORD?. <br />
+                            3. Click OK. <br />
+                            4. Please check your email to obtain a link that redirects you to reset your password. <br />
+                            5. You may log in with your new password now.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sst">
+                <h3>Sales & Service Tax Implementation</h3>
+                <div class="faq">
+                    <div class="question">
+                        <h4>With the implementation of SST from 1st September 2018, how will it affect Olen Cinemas
+                            customers? (i.e. Will your ticket prices go up?)</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            The 6% Service Tax applies to movie tickets and all products sold as part of our F&B. This
+                            includes takeaways, concession food items, and combos sold at our cafes, concessions
+                            counters, and online.<br />
+                            Prices will be rounded to the nearest 10 sen. (e.g. RM9.53 becomes RM9.50 / RM9.57 becomes
+                            RM9.60).<br /><br />
+                        </p>
+                        <table id="faqtable">
+                            <tr>
+                                <th> &nbsp; </th>
+                                <th>Current F&B Price &nbsp;</th>
+                                <th>F&B with 6% Service Tax</th>
+                            </tr>
+                            <tr>
+                                <td>Net Product Price</td>
+                                <td>8.00</td>
+                                <td>8.00</td>
+                            </tr>
+                            <tr>
+                                <td>6% Service Tax</td>
+                                <td>-</td>
+                                <td>0.48</td>
+                            </tr>
+                            <tr>
+                                <td>Sub-Total</td>
+                                <td>8.00</td>
+                                <td>8.48</td>
+                            </tr>
+                            <tr>
+                                <td>Total (after rounding)</td>
+                                <td>8.00</td>
+                                <td>8.50</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chatbot">
+                <h3>A Guide to the Olen Chat Bot</h3>
+                <div class="faq">
+                    <div class="question">
+                        <h4>How can I interact with the Olen Chat Bot? </h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            The chat bot is located at the bottom right corner of our website with an icon of our company logo. Once it is clicked, a chat box will appear. You may ask about the showtime of a movie, location of our cinemas, and even prices of our food and beverage there. For further assistance, please direct to our <a href="chatbotguide.html">Chat Bot Guide Page</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+
+
+    </footer>
+</body>

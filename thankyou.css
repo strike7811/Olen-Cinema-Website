@@ -1,0 +1,35 @@
+
+.thankyou{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.thankyou p{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.8;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .thankyou p{
+        font-size: 1.0rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .img_container{
+        margin-top: 30px;
+    }
+  }

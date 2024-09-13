@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | Contact Us</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="contact_us.css">
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+
+    <!-- Live Chat Links -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="chatresponse.js" defer></script>
+    <script type="module" src="chatbot.js" defer></script>
+
+    <script src="index.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+    <script type="module" src="clearFirebaseData.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h2 class="title">Contact Us</h2>
+        <div class="image">
+            <div class="overlay">
+                <h3>We would like to hear from you.</h3><br>
+                <h3>Let's talk.</h3>
+            </div>
+        </div>
+        <div class="feedback">
+            <h2 class="title">Feedback Form</h2>
+            <form name="feedback" action="thankyou.html" method="get">
+                <div id="info">
+                    <label for="fbname">Name</label>
+                    <input type="text" name="fbname" id="fbname" required>
+                </div>
+                <div id="info">
+                    <label for="fbcontact">Contact Number</label>
+                    <input type="tel" name="fbcontact" id="fbcontact" placeholder="01x-xxxxxxx / 01x-xxxxxxxx"
+                        pattern="^(\+?6?01)[02-46-9][-][0-9]{7}$|^(\+?6?01)[1][-][0-9]{8}$">
+                </div>
+                <div id="info">
+                    <label for="fbmail">Email</label>
+                    <input type="email" name="fbmail" id="fbmail" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+                        required>
+                </div>
+                <div id="info">
+                    <label for="fblist">Your Question Topic</label>
+                    <select name="fblist" id="fblist">
+                        <optgroup label="General">
+                            <option value="hr">Recruitment</option>
+                            <option value="payment">Payment Enquiries</option>
+                            <option value="discount">Ticket Discounts</option>
+                            <option value="promotion">Promotions</option>
+                        </optgroup>
+                        <optgroup label="Cinemas & Movies">
+                            <option value="cinema">Cinema Hall</option>
+                            <option value="movie">Movies</option>
+                        </optgroup>
+                        <optgroup label="Services">
+                            <option value="f&b">Food & Beverages</option>
+                            <option value="customer">Customer Service</option>
+                        </optgroup>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div id="info">
+                    <label for="fbquestion">Details</label>
+                    <textarea name="fbquestion" id="fbquestion" cols="30" rows="10" required></textarea>
+                </div>
+                <div id="info">
+                    <div id="btn_container">
+                        <input type="submit" value="Submit Form">
+                        <input type="button" value="Cancel Form" onclick="cancelsubmit()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function cancelsubmit() {
+            if (confirm("Are you sure you want to cancel the submission of this form?") == 1) {
+                document.feedback.reset();
+                window.location.reload();
+            }
+        }
+    </script>
+
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+    </footer>
+</body>

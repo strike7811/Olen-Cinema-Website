@@ -1,0 +1,84 @@
+.container {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  background-color: #E0E0E0;
+  padding: 5px 20px 15px 20px;
+  border-radius: 10px;
+}
+
+#title {
+  margin: auto;
+  width: 60%;
+  color: #f1f1f1;
+  padding: 30px 0 15px 0;
+}
+
+#text1 {
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  color: #f1f1f1;
+  padding-bottom: 25px;
+}
+
+.instrc {
+  background-color: #E0E0E0;
+  padding: 15px 0;
+}
+
+.instrc a {
+  color: #ff5c33;
+  background-color: #E0E0E0;
+}
+
+.instrc a:hover {
+  color: #ffa07a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#label b {
+  background-color: #E0E0E0;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #C0C0C0;
+  border-radius: 3px;
+  background-color: #C0C0C0;
+  text-align: left;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #E8E8E8;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #ff5c33;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.registerbtn:hover {
+  background-color: #ffa07a;
+}
+
+footer {
+  margin-top: 50px;
+}
+

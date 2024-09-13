@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Olen Cinemas | Squid Game</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="moviedesc.css">
+
+    <!-- Live Chat Links -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="chatresponse.js" defer></script>
+    <script type="module" src="chatbot.js" defer></script>
+
+    <!-- Script source for social media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+
+    <!-- Default Nav Bar, Footer Links -->
+    <script src="index.js" defer></script>
+
+    <!-- Login Link -->
+    <script type="module" src="loginname.js" defer></script>
+
+    <!-- Database Links -->
+    <script type="module" src="firebaseName.js" defer></script>
+    <script src="saveName.js" defer></script>
+
+    <!-- Special Links -->
+    <script src="allmovie.js" defer></script>
+
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <!--Content of Page-->
+    <div id="wrapper">
+        <div class="spacing">
+            <img src="Images/poster/poster11.jpg" alt="Squid Game"
+                style="float:left; padding-right: 50px; padding-bottom: 50px;" height="725" width="500">
+            <iframe id="trailer" width="675" height="450" src="https://www.youtube.com/embed/oqxAJKy0ii4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>Squid Game</h2>
+        <h4>Genre: Action, Horror Fiction, Survival</h4>
+        <br>
+        <!-- Button to direct to booking page -->
+        <div class="buttons" id="buttonBooking">
+            <!-- Book Now button -->
+            <button class="bookbutton" id="Squid Game">Book Now!</button>
+        </div>
+        <br><br><br>
+        <!--Creating Tabs for Selection Poster-->
+        <div class="mov_tab">
+            <button class="mov_tablinks" onclick="mov_tab(event, 'Description')"
+                id="mov_defaultOpen">Description</button>
+            <button class="mov_tablinks" onclick="mov_tab(event, 'Cast')">Cast</button>
+        </div>
+        <div class="mov_content">
+            <div id="Description" class="mov_tabcontent">
+                <br><br>
+                <dl id="topdesc">
+                    <dt><strong>Director: </strong></dt>
+                    <dd>Hwang Dong-hyuk</dd>
+                    <dt><strong>Distributor: </strong></dt>
+                    <dd>Netflix</dd>
+                    <dt><strong>Run Time: </strong> 1h 03m</dt>
+                </dl>
+                <article>Squid Game (Korean: 오징어 게임; RR: Ojing-eo Geim) is a South Korean survival drama television
+                    series created by Hwang Dong-hyuk for Netflix. Its cast includes Lee Jung-jae, Park Hae-soo, Wi
+                    Ha-joon, HoYeon Jung, O Yeong-su, Heo Sung-tae, Anupam Tripathi, and Kim Joo-ryoung.
+                    <br><br>
+                    Seong Gi-hun, a divorced father and indebted gambler who lives with his elderly mother, is invited
+                    to play a series of children's games for a chance at a large cash prize. Accepting the offer, he is
+                    taken to an unknown location where he finds himself among 455 other players who are all in deep
+                    financial trouble.
+                </article>
+            </div>
+
+            <div id="Cast" class="mov_tabcontent">
+                <br><br>
+                <table>
+                    <tr>
+                        <th>Star</th>
+                        <th>Character</th>
+                    </tr>
+                    <tr>
+                        <td>Lee Jung-jae</td>
+                        <td>Seong Gi-hun</td>
+                    </tr>
+                    <tr>
+                        <td>Park Hae-soo</td>
+                        <td>Cho Sang-woo</td>
+                    </tr>
+                    <tr>
+                        <td>Wi Ha-joon</td>
+                        <td>Hwang Jun-ho</td>
+                    </tr>
+                    <tr>
+                        <td>HoYeon Jung</td>
+                        <td>Kang Sae-byeok</td>
+                    </tr>
+                    <tr>
+                        <td>O Yeong-su</td>
+                        <td>Oh Il-nam</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Trending Posters-->
+    <div class="container">
+        <h4 class="suggestions">More Suggestions </h4>
+        <div class="posterrow">
+            <div class="postercolumn">
+                <a href="nsm12.html"><img src="Images/poster/poster12.jpg" alt="Black Adam" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm12.html">
+                        <h4>Black Adam</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="postercolumn">
+                <a href="nsm13.html"><img src="Images/poster/poster13.jpg" alt="Train to Busan" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm13.html">
+                        <h4>Train to Busan</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="postercolumn">
+                <a href="nsm14.html"><img src="Images/poster/poster14.jpg" alt="2012" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm14.html">
+                        <h4>2012</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="postercolumn">
+                <a href="nsm15.html"><img src="Images/poster/poster15.jpg" alt="3 Idiots" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm15.html">
+                        <h4>3 Idiots</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot_lc_container collapse">
+        <div class="bot_chat-header">
+            <div class="bot_logo">
+                <img src="Images/favicon.png" alt="chatlogo">
+            </div>
+            <div class="bot_title">Olen Chat Bot</div>
+        </div>
+        <div class="bot_chat-body">
+            <div class="loading hide">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+        </div>
+        <div class="bot_chat-input">
+            <div class="bot_input-sec">
+                <input type="text" id="bot_txtInput" placeholder="Type here" autofocus>
+            </div>
+            <div class="bot_send">
+                <img src="Images/sendbutton.png" alt="send" width="80%">
+            </div>
+        </div>
+    </div>
+    <div class="bot_chat_btn">
+        <div class="bot_content">
+            <h3 class="bot_tooltiptext">Chat with Me!</h3>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const check = document.getElementById("noLogin");
+
+        const buttonBookCheck = document.getElementById("buttonBooking");
+
+        buttonBookCheck.addEventListener('click', () => {
+            if (check.style.display !== 'none') { //means no user sign in
+                alert("Please sign in before proceed to bookings.");
+            } else {
+                window.location.href = "nsm11v.html"
+            }
+        })
+    </script>
+</body>
+
+</html>

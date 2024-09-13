@@ -1,0 +1,88 @@
+* {
+    overflow-x: hidden;
+}
+
+.payment_container {
+    margin: auto;
+    width: 60%;
+    background-color: #E0E0E0;
+    padding: 5px 20px 15px 20px;
+    border-radius: 10px;
+}
+
+.payment_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.payment_column {
+    background-color: #E0E0E0;
+    flex: 50%;
+    padding: 0 16px;
+}
+
+#title {
+    margin: auto;
+    width: 60%;
+    color: #f1f1f1;
+    padding: 25px 0 30px 0;
+}
+
+#sub_title {
+    background-color: #E0E0E0;
+    padding: 10px 0 20px 0;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    border-radius: 3px;
+    background-color: #C0C0C0;
+}
+
+label {
+    background-color: #E0E0E0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon_container {
+    background-color: #E0E0E0;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    font-size: 24px;
+}
+
+#card {
+    background-color: #E0E0E0;
+}
+
+#btn {
+    background-color: #E0E0E0;   
+}
+
+.btn {
+    background-color: #ff5c33;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #ffa07a;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .payment_row {
+        flex-direction: column;
+    }
+}

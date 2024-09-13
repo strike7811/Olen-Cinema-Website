@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+
+    <!-- Live Chat Links -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="chatresponse.js" defer></script>
+    <script type="module" src="chatbot.js" defer></script>
+
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="clearFirebaseData.js"></script>
+    <!-- <script>
+        localStorage.clear();
+    </script> -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <!-- MAIN PAGE BANNER -->
+    <div class="banner">
+        <!-- Full-width images with number and caption text -->
+        <div class="bannerloop fade">
+            <img src="Images/banner/banner01.jpg" style="width:100%">
+        </div>
+        <div class="bannerloop fade">
+            <img src="Images/banner/banner02.jpg" style="width:100%">
+        </div>
+        <div class="bannerloop fade">
+            <img src="Images/banner/banner03.jpg" style="width:100%">
+        </div>
+        <div class="bannerloop fade">
+            <img src="Images/banner/banner04.jpg" style="width:100%">
+        </div>
+        <div class="bannerloop fade">
+            <img src="Images/banner/banner05.png" style="width:100%">
+        </div>
+        <div class="bannerloop fade">
+            <img src="Images/banner/banner06.png" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <!--Creating Tabs for Selection Poster-->
+    <div class="main_tab">
+        <button class="main_tablinks" onclick="main_tab(event, 'Now_showing')" id="defaultOpen">Now Showing</button>
+        <button class="main_tablinks" onclick="main_tab(event, 'Coming_Soon')">Coming Soon</button>
+    </div>
+
+    <div id="Now_showing" class="main_tabcontent">
+        <!--Trending Posters-->
+        <div class="row">
+            <div class="column">
+                <a href="nsm1.html"><img src="Images/poster/poster1.jpg" alt="Black Panther" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm1.html">
+                        <h4>Black Panther</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm2.html"><img src="Images/poster/poster2.jpg" alt="Aladdin" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm2.html">
+                        <h4>Aladdin</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm3.html"><img src="Images/poster/poster3.jpg" alt="Frozen 2" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm3.html">
+                        <h4>Frozen 2</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="nsm4.html"><img src="Images/poster/poster4.jpg" alt="Inside Out" style="width:100%"></a>
+                <div class="text">
+                    <a href="nsm4.html">
+                        <h4>Inside Out</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <h3 id="more_text"><a href="now_showing.html">More &#9658;</a></h3>
+        </div>
+    </div>
+
+    <div id="Coming_Soon" class="main_tabcontent">
+        <div class="row">
+            <div class="column">
+                <a href="csm2.html"><img src="Images/poster/poster17.jpg" alt="Interstella" style="width:100%"></a>
+                <div class="text">
+                    <a href="csm2.html">
+                        <h4>Interstellar</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="csm3.html"><img src="Images/poster/poster18.jpg" alt="Jurassic World" style="width:100%"></a>
+                <div class="text">
+                    <a href="csm3.html">
+                        <h4>Jurassic World</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="csm4.html"><img src="Images/poster/poster19.jpg" alt="Alien" style="width:100%"></a>
+                <div class="text">
+                    <a href="csm4.html">
+                        <h4>Alien</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="csm5.html"><img src="Images/poster/poster20.jpg" alt="Moonfall" style="width:100%"></a>
+                <div class="text">
+                    <a href="csm5.html">
+                        <h4>Moonfall</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <h3 id="more_text"><a href="coming_soon.html">More &#9658;</a></h3>
+        </div>
+    </div>
+
+    <div class="topmovies_container">
+        <h2 id="title">Top 5 Movies</h2>
+        <div class="mov_row">
+            <div class="list">
+                <h3 id="index">1</h3>
+                <h3 id="movie_name">Mulan</h3>
+                <!-- Button to direct to booking page -->
+                <div class="buttons" id="buttonBooking1">
+                    <!-- Book Now button -->
+                    <button class="bookbutton" id="Mulan">Book Now!</button>
+                </div>
+            </div>
+            <div class="list">
+                <h3 id="index">2</h3>
+                <h3 id="movie_name">2012</h3>
+                <!-- Button to direct to booking page -->
+                <div class="buttons" id="buttonBooking2">
+                    <!-- Book Now button -->
+                    <button class="bookbutton" id="2012">Book Now!</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="mov_row">
+            <div class="list">
+                <h3 id="index">3</h3>
+                <h3 id="movie_name">Train to Busan</h3>
+                <!-- Button to direct to booking page -->
+                <div class="buttons" id="buttonBooking3">
+                    <!-- Book Now button -->
+                    <button class="bookbutton" id="Train to Busan">Book Now!</button>
+                </div>
+            </div>
+            <div class="list">
+                <h3 id="index">4</h3>
+                <h3 id="movie_name">3 Idiots</h3>
+                <!-- Button to direct to booking page -->
+                <div class="buttons" id="buttonBooking4">
+                    <!-- Book Now button -->
+                    <button class="bookbutton" id="3 Idiots">Book Now!</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="mov_row">
+            <div class="list">
+                <h3 id="index">5</h3>
+                <h3 id="movie_name">Encanto</h3>
+                <!-- Button to direct to booking page -->
+                <div class="buttons" id="buttonBooking5">
+                    <!-- Book Now button -->
+                    <button class="bookbutton" id="Encanto">Book Now!</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br><Br>
+    </div>
+
+    <div class="bot_lc_container collapse">
+        <div class="bot_chat-header">
+            <div class="bot_logo">
+                <img src="Images/favicon.png" alt="chatlogo">
+            </div>
+            <div class="bot_title">Olen Chat Bot</div>
+        </div>
+        <div class="bot_chat-body">
+            <div class="loading hide">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+        </div>
+        <div class="bot_chat-input">
+            <div class="bot_input-sec">
+                <input type="text" id="bot_txtInput" placeholder="Type here" autofocus>
+            </div>
+            <div class="bot_send">
+                <img src="Images/sendbutton.png" alt="send" width="80%">
+            </div>
+        </div>
+    </div>
+    <div class="bot_chat_btn">
+        <div class="bot_content">
+            <h3 class="bot_tooltiptext">Chat with Me!</h3>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const check = document.getElementById("noLogin");
+
+        document.getElementById("buttonBooking1").addEventListener("click", () => {
+
+            if (check.style.display !== 'none') { //means no user sign in
+                alert("Please sign in before proceed to bookings.");
+            } else {
+                window.location.href = "nsm10v.html"
+            }
+        })
+
+        document.getElementById("buttonBooking2").addEventListener("click", () => {
+
+            if (check.style.display !== 'none') { //means no user sign in
+                alert("Please sign in before proceed to bookings.");
+            } else {
+                window.location.href = "nsm14v.html"
+            }
+        })
+
+        document.getElementById("buttonBooking3").addEventListener("click", () => {
+
+            if (check.style.display !== 'none') { //means no user sign in
+                alert("Please sign in before proceed to bookings.");
+            } else {
+                window.location.href = "nsm13v.html"
+            }
+        })
+
+        document.getElementById("buttonBooking4").addEventListener("click", () => {
+
+            if (check.style.display !== 'none') { //means no user sign in
+                alert("Please sign in before proceed to bookings.");
+            } else {
+                window.location.href = "nsm15v.html"
+            }
+        })
+
+        document.getElementById("buttonBooking5").addEventListener("click", () => {
+
+            if (check.style.display !== 'none') { //means no user sign in
+                alert("Please sign in before proceed to bookings.");
+            } else {
+                window.location.href = "nsm5v.html"
+            }
+        })
+
+        /*For main page banner*/
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("bannerloop");
+            let dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].className = dots[i].className.replace(" active", "");
+
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+</body>
+
+</html>

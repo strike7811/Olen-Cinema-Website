@@ -1,0 +1,200 @@
+#content {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 50px;
+}
+
+#img_container {
+    padding-top: 15px;
+}
+
+#title {
+    color: #f1f1f1;
+    margin: 25px 0 30px 0;
+}
+
+.filter_row {
+    margin: 0 -16px;
+}
+
+/* Add padding BETWEEN each column*/
+.filter_row,
+.filter_column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.filter_column {
+    float: left;
+    width: 25%;
+    display: none;
+    /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.filter_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 315px;
+}
+
+.content h4 {
+    background-color: white;
+    font-size: 15px;
+}
+
+.content p {
+    background-color: white;
+    font-size: 12px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.filter {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Add a grey background color on mouse-over */
+.filter:hover {
+    background-color: #DCDCDC;
+}
+
+/* Add a dark background color to the active button */
+.filter.active {
+    background-color: #808080;
+    color: #f1f1f1;
+}
+
+.container{
+    display: none;
+}
+
+.buttons {
+    margin: 25px 0 50px 0;
+    float: right;
+}
+
+/* Add style to the text of the button */
+.buttons a {
+    background-color: #ff5c33;
+    color: white;;
+    padding: 15px 45px 15px 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.buttons a:hover {
+    background-color: #ffa07a;
+}
+
+.qty_box {
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+
+.qty_box input {
+    background-color: white;
+    width: 45px;
+    height: 30px;
+    border: 1px solid #989898;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+.qty_box span {
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #989898;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.qty_box span:hover {
+    background-color: #e8e8e8;
+}
+
+.total_container p {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 8px 25px;
+    border: 2px dotted #808080;
+    border-radius: 5px;
+}
+
+.total_container span {
+    background-color: #f1f1f1;
+}
+
+@media only screen and (max-width:850px) {
+
+    .filter_column {
+        width: 50%; 
+    }
+
+    .content {
+        height: 275px;
+    }
+
+    .content img{
+        max-height: 170px;
+    }
+
+    .content h4 {
+        font-size: 12px;
+    }
+
+    .content p {
+        font-size: 10px;
+        float: right;
+    }
+
+    .filter {
+        padding: 8px 12px;
+        background-color: #f1f1f1;
+    }
+
+    .qty_box {
+        display: inline-flex;
+    }
+
+    .qty_box input {
+        width: 35px;
+        height: 25px;
+    }
+
+    .qty_box span {
+        width: 25px;
+        height: 25px;
+    }
+}

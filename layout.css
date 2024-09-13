@@ -1,0 +1,278 @@
+@font-face {
+    font-family: Poppins;
+    src: url('Poppins.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #080808;
+    font-family: poppins;
+}
+
+#main {
+    color: #f2f2f2;
+}
+
+.navbar .main {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.navbar .main .menu {
+    float: left;
+    color: #f2f2f2;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar .main .logonav {
+    float: left;
+
+}
+
+.navbar .main .logonav img {
+    height: 40px;
+    padding-left: 10px;
+}
+
+.navbar .account {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar .main .account a {
+    color: #f2f2f2;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.navbar .sidenav {
+    float: left;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #080808;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2;
+
+
+}
+
+.navbar .sidenav a {
+    padding: 8px 8px 0 32px;
+    font-size: 15px;
+    color: #F5F5F5;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar .sidenav .nav_home a {
+    padding: 0 8px 0 32px;
+    font-size: 35px;
+    color: #F5F5F5;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar .sidenav a:hover {
+    color: #ffa07a;
+}
+
+.navbar .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navbar .sidenav h4 {
+    padding: 15px 8px 8px 32px;
+    font-size: 20px;
+    color: #ffa07a;
+}
+
+.navbar .sidenav ul {
+    font-size: 0;
+}
+
+.navbar .sidenav li {
+    /* Inline-block to make each social media logo arrange side by side  */
+    display: inline-block;
+    margin-right: -4px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#noLogin:hover {
+    cursor: pointer;
+    color: #ffa07a;
+}
+
+#noLogin1:hover {
+    cursor: pointer;
+    color: #ffa07a;
+}
+
+#loginname:hover {
+    cursor: pointer;
+    color: #ffa07a;
+}
+
+footer {
+    /* vw allows css to see the entire browser window. Thus, if the screen size is smaller, it will adjust the width accordingly */
+    width: 95vw;
+    display: block;
+    /* Overflow:hidden prevents scrollbars from appearing */
+    overflow: hidden;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    /* width 1100px allows the footer content to be placed center of the page */
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .logo_container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .logo_container img {
+    width: 300px;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.inner_footer .column {
+    margin-right: 80px;
+    float: left;
+    height: 100%;
+}
+
+/* Add style to the anchor element in the footer columns */
+.inner_footer .column a {
+    text-align: left;
+    font-size: 15px;
+    color: #F5F5F5;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.inner_footer .column a:hover {
+    color: #ffa07a;
+}
+
+/* To make the last column of ".column" have no margin so that the entire width will be covered without any gaps */
+.inner_footer .column:last-child {
+    margin-right: 0;
+}
+
+/* Add style to the h1 elements in the footer columns */
+.inner_footer .column h1 {
+    font-size: 20px;
+    color: #F5F5F5;
+    display: block;
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+.inner_footer .column li {
+    /* Inline-block to make each social media logo arrange side by side  */
+    display: inline-block;
+    padding: 0px 5px 25px 5px;
+    font-size: 20px;
+}
+
+.inner_footer .column span {
+    font-size: 12px;
+    color: #F5F5F5;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar .main .account a {
+        font-size: 14px;
+    }
+
+    footer {
+        max-width: inherit;
+    }
+
+    .inner_footer {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        margin: auto 20px;
+    }
+
+    .inner_footer .column {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin-left: 20px;
+    }
+
+    .inner_footer .column h1 {
+        margin-bottom: 15px;
+        border-bottom: 1px solid white;
+    }
+
+    .inner_footer .column ul>li {
+        padding-right: 20px;
+        display: inline-block;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffa07a;
+}

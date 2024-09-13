@@ -1,0 +1,291 @@
+#wrapper {
+    background-color: in;
+    display: block;
+    width: 80%;
+    /* Margins:auto to make the content align center */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+    color: #f1f1f1;
+    z-index: 2;
+}
+
+/* Add top padding for the image */
+.spacing {
+    padding-top: 20px;
+}
+
+h2 {
+    max-width: 900px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/* Adjust the position */
+dl {
+    margin-bottom: 40px;
+    line-height: 22px;
+    width: 100%;
+    text-align: justify;
+}
+
+dt, strong {
+    background-color: #242424;
+}
+
+dd {
+    background-color: #242424;
+    padding-bottom: 8px;
+}
+
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+#trailer {
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.details {
+    display: block;
+}
+
+/* ----------Sub Tab Menu (Description, Cast)-----------------*/
+/* Style the tab */
+
+.mov_tab {
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border: 1px #ffa07a;
+    border-bottom: none;
+    border-radius: 4px;
+    /*background-color: #e9612c; */
+    background-color: #242424;
+
+}
+
+/* Style the buttons inside the tab */
+.mov_tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #f1f1f1;
+}
+
+/* Change background color of buttons on hover */
+.mov_tab button:hover {
+    /*background-color: #ffa07a;*/
+    color: #ffa07a;
+}
+
+/* Create an active/current tablink class */
+.mov_tab button.active {
+    background-color: #ffa07a;
+    color: #080808;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+/* Style the tab content */
+.mov_tabcontent {
+    background-color: #242424;
+    color: #f1f1f1;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 10em;
+    display: none;
+    border-top: none;
+    border-radius: 4px;
+    line-height: 22px;
+    /*padding: 6px 12px;*/
+}
+
+article {
+    background-color: inherit;
+    padding-bottom: 5em;
+    font-size: 18px;
+    text-align: justify;
+}
+
+table {
+    background-color: inherit;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th,
+td {
+    font-size: 18px;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+    background-color: #242424;
+}
+
+/* .mov_tabcontent {
+    background-color: #242424;
+  } */
+
+/*-------------for (Suggestion Poster Use)---------------------------- */
+.suggestions {
+    font-size: 25px;
+    color: #f1f1f1;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin: 10px 150px;
+}
+
+/*.posterrow {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+}*/
+
+.posterrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Adjust the width of each column to 25% to arrange 4 pictures in a row with equal spacing in between*/
+.postercolumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 5px 20px 5px 20px;
+}
+
+.postercolumn img {
+    border-radius: 5%;
+}
+
+.postercolumn img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.text h4 {
+    color: #f2f2f2;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1499px) {
+
+    .mov_tab,
+    .mov_tabcontent {
+        clear: left;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .mov_tab,
+    .mov_tabcontent {
+        clear: left;
+    }
+
+    .mov_tab button {
+        font-size: 15px;
+    }
+
+    article {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2,
+    h4,
+    #topdesc {
+        clear: left;
+        text-align: center;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    .posterrow {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .postercolumn {
+        flex: 100%;
+        max-width: 50%;
+        column-count: 2;
+        column-gap: 20px;
+        column-rule: 1px solid white;
+    }
+
+    .text h4 {
+        font-size: 16px;
+    }
+
+    .suggestions {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        margin: 30px;
+    }
+
+    #trailer {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        padding-top: 5px;
+    }
+
+    .text h4 {
+        font-size: 14px;
+    }
+
+    .suggestions {
+        font-size: 20px;
+    }
+
+}

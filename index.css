@@ -1,0 +1,291 @@
+/* Slideshow container */
+.banner {
+    display: block;
+    margin: auto;
+    max-width: 1601px;
+    aspect-ratio: auto 511 / 184;
+    height: 450;
+}
+
+/* Hide the images by default */
+.bannerloop {
+    display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active,
+.dot:hover {
+    background-color: #ffa07a;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ----------Sub Tab Menu (Now Showing, Coming Soon)-----------------*/
+/* Style the tab */
+.main_tab {
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 5em;
+    overflow: hidden;
+    border: 1px #ffa07a;
+    border-bottom: none;
+    /*background-color: #e9612c; */
+    background-color: #080808;
+}
+
+/* Style the buttons inside the tab */
+.main_tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #f1f1f1;
+}
+
+/* Change background color of buttons on hover */
+.main_tab button:hover {
+    /*background-color: #ffa07a;*/
+    color: #ffa07a;
+}
+
+/* Create an active/current tablink class */
+.main_tab button.active {
+    /*background-color: #ffa07a;*/
+    color: #ffa07a;
+    background-color: #181818;
+    border-radius: 5px;
+}
+
+/* Style the tab content */
+.main_tabcontent {
+    color: #f1f1f1;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 10em;
+    display: none;
+    border-top: none;
+    flex-flow: row wrap;
+    border: 8px solid #181818;
+    border-radius: 5px;
+}
+
+.main_tabcontent .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.main_tabcontent .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 5px 20px 5px 20px;
+}
+
+.main_tabcontent .column img {
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.main_tabcontent .column img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.text h4 {
+    color: #f2f2f2;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text h4:hover {
+    color: #ffa07a;
+}
+
+.more {
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#more_text a {
+    color: #f1f1f1;
+    font-size: 15px;
+}
+
+#more_text a:hover {
+    color: #ffa07a;
+}
+
+.topmovies_container {
+    background-color: #181818;
+    margin-bottom: 100px;
+}
+
+#title {
+    margin: auto;
+    width: 75%;
+    background-color: #181818;
+    color: #f1f1f1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mov_row {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #181818;
+}
+
+.list {
+    flex: 50%;
+    margin: auto;
+    width: 75%;
+    background-color: #181818;
+    font-size: 15px;
+    padding: 20px 10px 20px 0;
+}
+
+.list h3 {
+    display: inline-block;
+    font-family: poppins;
+    background-color: #181818;
+}
+
+#index {
+    color: #ffa07a;
+    padding-right: 20px;
+}
+
+#movie_name {
+    color: #f1f1f1;
+    width: 375px;
+}
+
+.buttons {
+    background-color: #181818;
+    display: inline-block;
+}
+
+.buttons:hover {
+    color: #f1f1f1;
+}
+
+.bookbutton {
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 2px;
+}
+
+.bookbutton:hover {
+    color: #f1f1f1;
+    background-color: #181818;
+    border: 2px solid #ffa07a;
+    box-shadow: 0 0 10px 0 #ffa07a;
+}
+
+.bookbutton a {
+    background-color: #f1f1f1;
+    margin-top: 5px;
+    color: #080808;
+}
+
+hr {
+    margin: auto;
+    width: 75%;
+}
+
+@media only screen and (max-width: 900px) {
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .topmovies_container {
+        background-color: #181818;
+        margin-bottom: 10px;
+    }
+
+    .main_tab {
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 0;
+    }
+
+    .main_tab button {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    .main_tabcontent {
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 5em;
+    }
+
+    .text {
+        padding-top: 5px;
+    }
+
+    .text h4 {
+        font-size: 13px;
+    }
+
+    #more_text a {
+        font-size: 11px;
+    }
+}

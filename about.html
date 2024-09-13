@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | About Us</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="layout.css" />
+
+    <script src="index.js" defer></script>
+    <script src="about.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="clearFirebaseData.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about">
+            <h2 id="abt_title">About Us</h2><br>
+            <p>We have delighted numerous moviegoers with memories of a fantastic day out since officially opening
+                our doors in 2003. With Olen Cinema's broad selection of entertainment, there is something for
+                everyone, from the newest blockbusters to intimate dramas, with a splash of documentaries, sports,
+                and culture all in the mix.</p><br>
+            <p>Relax in the luxurious comfort of our relaxing venues or indulge in the luxuries of Malaysia's top
+                luxury cinema. Bring the family along for some family-friendly entertainment, or treat your eyes to
+                the biggest cinema LED screen in the world, with its astounding clarity. Finally, immerse yourself
+                in the spectacular film experience, which is the most realistic on the planet. You get to decide!
+            </p><br>
+            <p>We also take pleasure in the flavorful quality of our food and beverages, providing customers at any
+                of our 8 locations around the country with the greatest popcorn in town as well as an intriguing
+                array of options. From the innocent beauty of a first date to the first time that children see their
+                superheroes come to life on the big screen, we consider ourselves fortunate and incredibly gratified
+                to have had a little role in significant occasions.
+            </p><br>
+            <div id="storeimg">
+                <img src="Images/about.jpg" alt="ourstore">
+            </div>
+        </div>
+
+        <h2 class="title">Locate Us</h2>
+        <div class="about-container">
+
+            <div class="store-container">
+                <div class="store" data-name="s-1">
+                    <img src="Images/hall/cin1.jpg" alt="">
+                    <h3>Olen Bradell South</h3>
+                </div>
+
+                <div class="store" data-name="s-2">
+                    <img src="Images/hall/cin2.jpg" alt="">
+                    <h3>Olen Permaisuri Nilan</h3>
+                </div>
+                <div class="store" data-name="s-3">
+                    <img src="Images/hall/cin3.jpg" alt="">
+                    <h3>Olen Ceylonz Walk</h3>
+                </div>
+
+                <div class="store" data-name="s-4">
+                    <img src="Images/hall/cin4.jpg" alt="">
+                    <h3>Olen Aksara Central</h3>
+                </div>
+                <div class="store" data-name="s-5">
+                    <img src="Images/hall/cin5.jpg" alt="">5
+                    <h3>Olen Noveka</h3>
+                </div>
+
+                <div class="store" data-name="s-6">
+                    <img src="Images/hall/cin6.jpg" alt="">6
+                    <h3>Olen Bijaya Shopping Centre</h3>
+                </div>
+                <div class="store" data-name="s-7">
+                    <img src="Images/hall/cin7.jpg" alt="">
+                    <h3>Olen Darlington</h3>
+                </div>
+
+                <div class="store" data-name="s-8">
+                    <img src="Images/hall/cin8.jpg" alt="">8
+                    <h3>Olen Tanjung Emas</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-preview">
+            <div class="preview" data-target="s-1">
+                <i class="fas fa-times"></i>
+                <h3>Olen Bradell South</h3>
+                <div class="location">
+                    <p>
+                        6-18, Level 6 Bradell South Mall, Bradell Village,<br>
+                        9, Jalan Rohzan, Bandar Bukit Perdana,<br>
+                        53300 Kuala Lumpur,<br>
+                        Wilayah Persekutuan, Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-2">
+                <i class="fas fa-times"></i>
+                <h3>Olen Permaisuri Nilan</h3>
+                <div class="location">
+                    <p>
+                        F01, 1st Floor, Bukit Permaisuri Nilan,<br>
+                        Persiaran Bukit Permaisuri Nilan2,<br>
+                        Bandar Baru Klang, 41150 Klang,<br>
+                        Selangor, Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-3">
+                <i class="fas fa-times"></i>
+                <h3>Olen Ceylonz Walk</h3>
+                <div class="location">
+                    <p>
+                        Unit A5, Level5, Block A, Ceylonz Walk,<br>
+                        Persiaran Wawasan, Pusat Bandar Puchong,<br>
+                        47160 Puchong, Selangor,<br>
+                        Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-4">
+                <i class="fas fa-times"></i>
+                <h3>Olen Aksara Central</h3>
+                <div class="location">
+                    <p>
+                        Lot 4-23, Level 4, Aksara Central<br>
+                        No.9, Jalan Aksara Jaya,<br>
+                        Taman Tasik Amirah, 81300 Skudai,<br>
+                        Johor Bahru, Johor,<br>
+                        Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-5">
+                <i class="fas fa-times"></i>
+                <h3>Olen Noveka</h3>
+                <div class="location">
+                    <p>
+                        Level 8, Noveka Bay,<br>
+                        Jalan NB11/15, Bandar Noveka,<br>
+                        50088 Kuala Lumpur,<br>
+                        Wilayah Persekutuan, Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-6">
+                <i class="fas fa-times"></i>
+                <h3>Olen Bijaya Shopping Centre</h3>
+                <div class="location">
+                    <p>
+                        Level 8, Bijaya Shopping Centre,<br>
+                        Lorong Multimedia 3, 10250 George Town,<br>
+                        Pulau Pinang, Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-7">
+                <i class="fas fa-times"></i>
+                <h3>Olen Darlington</h3>
+                <div class="location">
+                    <p>
+                        8th Floor, Darlington Mall,<br>
+                        Damansara Utama, 47800 Petaling Jaya,<br>
+                        Selangor, Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+            <div class="preview" data-target="s-8">
+                <i class="fas fa-times"></i>
+                <h3>Olen Tanjung Emas</h3>
+                <div class="location">
+                    <p>
+                        S09, 2nd Floor, Tanjung Emas Shopping Centre,<br>
+                        3, Jalan Tanjung Emas 23/3E, Bukit Tanjung,<br>
+                        81200 Johor Bahru, Johor,<br>
+                        Malaysia<br><br>
+                        Number of Halls : 6
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+    </footer>
+</body>

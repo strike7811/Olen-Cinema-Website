@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olen Cinemas | Rest in Peace Department</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="csm.css">
+
+    <!-- Live Chat Links -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="chatresponse.js" defer></script>
+    <script type="module" src="chatbot.js" defer></script>
+
+    <!-- Script source for socail media icons -->
+    <script src="https://kit.fontawesome.com/e6550e7e85.js" crossorigin="anonymous"></script>
+
+    <script src="index.js" defer></script>
+    <script src="allmovie.js" defer></script>
+    <script type="module" src="loginname.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div id="side_nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav_home">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <h4>Movies</h4>
+            <a href="now_showing.html">Now Showing</a>
+            <a href="coming_soon.html">Coming Soon</a>
+            <a href="food_beverage.html">Food & Beverages</a>
+            <br>
+            <h4>More Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="policies.html">Policies</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Social Media</h4>
+            <a href="contact_us.html">Contact Us</a>
+            <ul>
+                <!-- The i class inserts the social media logos -->
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <span onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="logonav">
+                <span onclick="openNav()"><img src="Images/logo.png"></span>
+            </div>
+            <div class="account">
+                <a id="noLogin" href="signup.html">Register | Sign Up</a>&nbsp;&nbsp;&nbsp;
+                <a id="noLogin1" href="login.html">Login</a>
+                <a id="loginname" href="#"></a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <!--Content of Page-->
+    <div id="wrapper">
+        <div class="spacing">
+            <img src="Images/poster/poster21.jpg" alt="poster21"
+                style="float:left; padding-right: 50px; padding-bottom: 50px;" height="725" width="500">
+            <iframe id="trailer" width="675" height="450" src="https://www.youtube.com/embed/nt59JjtWFSU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>Rest in Peace Department</h2>
+        <h4>Genre: Action, Comedy, Supermatural</h4>
+        <h4>Release Date: 19 July 2023</h4>
+        <br>
+        <br><br><br><br><br><br><br>
+        <!--Creating Tabs for Selection Poster-->
+
+        <div class="mov_tab">
+            <button class="mov_tablinks" onclick="mov_tab(event, 'Description')"
+                id="mov_defaultOpen">Description</button>
+            <button class="mov_tablinks" onclick="mov_tab(event, 'Cast')">Cast</button>
+        </div>
+        <div class="mov_content">
+            <div id="Description" class="mov_tabcontent">
+                <br><br>
+                <dl id="topdesc">
+                    <dt><strong>Director: </strong></dt>
+                    <dd>Robert Schwentke</dd>
+                    <dt><strong>Distributor: </strong></dt>
+                    <dd>Universal Pictures</dd>
+                    <dt><strong>Run Time: </strong> 1h 36m</dt>
+                </dl>
+                <article>R.I.P.D., also marketed as R.I.P.D.: Rest in Peace Department, is an American supernatural
+                    action comedy film starring Jeff Bridges and Ryan Reynolds. The film was directed by Robert
+                    Schwentke and written by Phil Hay and Matt Manfredi, based on the comic book R.I.P.D. by Peter M.
+                    Lenkov.
+                    <br><br>
+                    A cop killed by his own partner joins RIPD, an afterlife law enforcement department working to
+                    apprehend various monsters disguised as humans living on earth, and gets paired up with a
+                    smart-mouthed veteran.
+                </article>
+            </div>
+
+            <div id="Cast" class="mov_tabcontent">
+                <br><br>
+                <table>
+                    <tr>
+                        <th>Star</th>
+                        <th>Character</th>
+                    </tr>
+                    <tr>
+                        <td>Ryan Reynolds</td>
+                        <td>Nick Walker</td>
+                    </tr>
+                    <tr>
+                        <td>Jeff Bridges</td>
+                        <td>Roicephus "Roy" Pulsipher</td>
+                    </tr>
+                    <tr>
+                        <td>Mary-Louise Parker</td>
+                        <td>Mildred Proctor</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin Bacon</td>
+                        <td>Bobby Hayes</td>
+                    </tr>
+                    <tr>
+                        <td>James Hong</td>
+                        <td>Grandpa Jerry Chen</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Trending Posters-->
+    <div class="container">
+        <h4 class="suggestions">More Suggestions </h4>
+        <div class="posterrow">
+            <div class="postercolumn">
+                <a href="csm7.html"><img src="Images/poster/poster22.jpg" alt="Harry Potter and The Philosopher's Stone"
+                        style="width:100%"></a>
+                <div class="text">
+                    <a href="csm7.html">
+                        <h4>Harry Potter and The Philosopher's Stone</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="postercolumn">
+                <a href="csm8.html"><img src="Images/poster/poster23.jpg" alt="Spider Man" style="width:100%"></a>
+                <div class="text">
+                    <a href="csm8.html">
+                        <h4>Spider Man</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="postercolumn">
+                <a href="csm9.html"><img src="Images/poster/poster24.jpg" alt="The Shawshank Redemption"
+                        style="width:100%"></a>
+                <div class="text">
+                    <a href="csm9.html">
+                        <h4>The Shawshank Redemption</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="postercolumn">
+                <a href="csm10.html"><img src="Images/poster/poster25.jpg" alt="Morbius" style="width:100%"></a>
+                <div class="text">
+                    <a href="csm10.html">
+                        <h4>Morbius</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot_lc_container collapse">
+        <div class="bot_chat-header">
+            <div class="bot_logo">
+                <img src="Images/favicon.png" alt="chatlogo">
+            </div>
+            <div class="bot_title">Olen Chat Bot</div>
+        </div>
+        <div class="bot_chat-body">
+            <div class="loading hide">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+        </div>
+        <div class="bot_chat-input">
+            <div class="bot_input-sec">
+                <input type="text" id="bot_txtInput" placeholder="Type here" autofocus>
+            </div>
+            <div class="bot_send">
+                <img src="Images/sendbutton.png" alt="send" width="80%">
+            </div>
+        </div>
+    </div>
+    <div class="bot_chat_btn">
+        <div class="bot_content">
+            <h3 class="bot_tooltiptext">Chat with Me!</h3>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <!-- Add a class within the footer to further add designs and styles -->
+        <div class="inner_footer">
+            <!-- Seperating the footer into 4 columns -->
+            <div class="logo_container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+            </div>
+            <div class="column">
+                <h1>Movies</h1>
+                <a href="now_showing.html">Now Showing</a>
+                <a href="coming_soon.html">Coming Soon</a>
+                <a href="food_beverage.html">Food & Beverages</a>
+            </div>
+            <div class="column">
+                <h1>More Information</h1>
+                <a href="about.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="policies.html">Policies</a>
+            </div>
+            <div class="column">
+                <h1>Social Media</h1>
+                <a href="contact_us.html">Contact Us</a>
+                <ul>
+                    <!-- The i class inserts the social media logos -->
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:OlenCinemas@movie.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <br>
+                <!-- Add the copyright statement -->
+                <span>Copyright © 2022 Olen Cinemas</span>
+            </div>
+        </div>
+
+
+
+    </footer>
+</body>
+
+</html>

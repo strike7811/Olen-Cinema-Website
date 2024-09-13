@@ -1,0 +1,22 @@
+@media only screen and (max-width: 800px) {
+    .container{
+        margin: 10px;
+    }
+
+    .container > .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container .row > .column{
+        flex: 100%;
+        max-width: 50%;
+        column-count: 2;
+        column-gap: 20px;
+        column-rule: 1px solid white;
+    }
+
+    .text h4{
+        font-size: medium;
+    }
+}
